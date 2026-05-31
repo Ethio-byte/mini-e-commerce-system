@@ -1,5 +1,14 @@
 <?php
 // checkout.php
+require_once 'includes/auth_logic.php';
+require_once 'includes/cart_logic.php';
+
+// Requirement: Show sign in page if guest tries to checkout
+if (!is_logged_in()) {
+    header('Location: login.php?redirect=checkout.php&message=' . urlencode('Please sign in or create an account to complete your purchase.'));
+    exit;
+}
+
 require_once 'includes/header.php';
 $cart = get_cart();
 
@@ -7,6 +16,8 @@ if (empty($cart)) {
     header('Location: index.php');
     exit;
 }
+
+$user = get_logged_in_user();
 ?>
 
 <main class="container">
@@ -16,11 +27,11 @@ if (empty($cart)) {
             <form action="confirmation.php" method="POST">
                 <div class="form-group">
                     <label>Full Name</label>
-                    <input type="text" name="name" required placeholder="John Doe">
+                    <input type="text" name="name" required placeholder="John Doe" value="<?php echo htmlspecialchars($user['name']); ?>">
                 </div>
                 <div class="form-group">
                     <label>Email Address</label>
-                    <input type="email" name="email" required placeholder="john@example.com">
+                    <input type="email" name="email" required placeholder="john@example.com" value="<?php echo htmlspecialchars($user['email']); ?>">
                 </div>
                 <div class="form-group">
                     <label>Shipping Address</label>

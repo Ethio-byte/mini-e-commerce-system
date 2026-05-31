@@ -5,7 +5,8 @@
         <div class="container footer-content">
             <div class="footer-section brand-info">
                 <a href="index.php" class="logo" style="margin-bottom: 20px;">
-                    <i class="fas fa-infinite"></i> LAZARUS
+                    <img src="assets/images/elogo.jpg" alt="LAZARUS" class="logo-img">
+                    <span>LAZARUS</span>
                 </a>
                 <p class="description">
                     Curated excellence for the modern individual. LAZARUS is a premier destination for high-performance electronics, handcrafted apparel, and refined lifestyle essentials, serving the global community from the heart of Ethiopia.

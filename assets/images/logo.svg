@@ -1,0 +1,8 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Modern E-commerce Bag + L Monogram -->
+  <path d="M35 35H65M35 35V75C35 80.5228 39.4772 85 45 85H75M65 35V55" stroke="#d4af37" stroke-width="6" stroke-linecap="square"/>
+  <!-- Bag Handle -->
+  <path d="M42 35V25C42 20.5817 45.5817 17 50 17C54.4183 17 58 20.5817 58 25V35" stroke="#d4af37" stroke-width="4" stroke-linecap="round"/>
+  <!-- Digital Accent Dot -->
+  <circle cx="75" cy="85" r="5" fill="#d4af37"/>
+</svg>
