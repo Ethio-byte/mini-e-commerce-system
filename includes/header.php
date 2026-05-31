@@ -85,7 +85,7 @@ $user = get_logged_in_user();
                 <span>Total:</span>
                 <span id="cart-total"><?php echo number_format(get_cart_total($products) * 54.5, 2); ?> ETB</span>
             </div>
-            <a href="checkout.php" class="btn btn-primary btn-block">Proceed to Payment</a>
+            <a href="cart.php" class="btn btn-primary btn-block">View Shopping Bag</a>
         </div>
     </div>
     <div id="overlay" class="overlay"></div>

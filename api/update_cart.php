@@ -29,6 +29,6 @@ $html = ob_get_clean();
 echo json_encode([
     'success' => true,
     'count' => get_cart_count(),
-    'total' => number_format(get_cart_total($products), 2),
+    'total' => number_format(get_cart_total($products) * 54.5, 2),
     'html' => $html
 ]);

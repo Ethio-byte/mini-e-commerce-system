@@ -35,10 +35,23 @@ document.addEventListener('DOMContentLoaded', () => {
             if (data.success) {
                 cartItemsContainer.innerHTML = data.html;
                 cartCount.textContent = data.count;
-                cartTotal.textContent = `$${data.total}`;
+                
+                const totalText = `${data.total} ETB`;
+                if (cartTotal) cartTotal.textContent = totalText;
+                
+                const cartPageTotal = document.getElementById('cart-page-total');
+                if (cartPageTotal) cartPageTotal.textContent = totalText;
                 
                 if (action === 'add' && !sidebar.classList.contains('open')) {
                     toggleCart();
+                }
+
+                // If on cart page and action was remove or qty update, 
+                // we might want a reload to refresh the main list, 
+                // but let's try to just update the total if possible.
+                // For simplicity, reload still ensures the main list reflects changes.
+                if (window.location.pathname.includes('cart.php')) {
+                    location.reload();
                 }
             }
         } catch (error) {

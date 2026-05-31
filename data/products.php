@@ -5,7 +5,7 @@ return [
     // ELECTRONICS
     1 => [
         'id' => 1, 'category' => 'electronics', 'name' => 'Studio Wireless Audio', 'price' => 199.99,
-        'image' => 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80',
+        'image' => 'https://images.unsplash.com/photo-1590611397243-82f9ee37a632?w=500&q=80',
         'description' => 'Active noise-cancelling with 40-hour battery life.'
     ],
     2 => [
@@ -49,7 +49,7 @@ return [
     // COSMETICS
     9 => [
         'id' => 9, 'category' => 'cosmetics', 'name' => 'Aura Night Serum', 'price' => 85.00,
-        'image' => 'https://images.unsplash.com/photo-1570172619380-4abc2e1bc638?w=500&q=80',
+        'image' => 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500&q=80',
         'description' => 'Deep cellular repair with hyaluronic acid and peptides.'
     ],
     10 => [
@@ -66,7 +66,7 @@ return [
     // WORKSPACE
     12 => [
         'id' => 12, 'category' => 'workspace', 'name' => 'Ergonomic Task Chair', 'price' => 450.00,
-        'image' => 'https://images.unsplash.com/photo-1505797149-43b00fe1847c?w=500&q=80',
+        'image' => 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&q=80',
         'description' => 'Full lumbar support with breathable mesh design.'
     ],
     13 => [
@@ -110,7 +110,7 @@ return [
     ],
     20 => [
         'id' => 20, 'category' => 'outdoor', 'name' => 'Titanium Cook Set', 'price' => 88.00,
-        'image' => 'https://images.unsplash.com/photo-1537242169601-383786043d83?w=500&q=80',
+        'image' => 'https://images.unsplash.com/photo-1585232004423-244e0e6904e3?w=500&q=80',
         'description' => 'Extremely lightweight and durable for backcountry use.'
     ]
 ];
